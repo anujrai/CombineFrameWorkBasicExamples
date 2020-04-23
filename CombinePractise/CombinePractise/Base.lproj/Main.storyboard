@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CombinePractise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNU-Vd-hvH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RR-QL-B0g">
+                                        <rect key="frame" x="16" y="16" width="382" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="8Lb-k5-evh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sx-rC-caT">
+                                        <rect key="frame" x="16" y="53" width="382" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="B46-58-ZFD"/>
+                                        </constraints>
+                                        <state key="normal" title="Tap Me To Chnage The Label Text">
+                                            <color key="titleColor" red="1" green="0.034869695639999997" blue="0.059189605280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8Q-lx-dDy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Combine Framework in Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rN-oi-m3P">
+                                        <rect key="frame" x="59" y="350" width="296" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1RR-QL-B0g" firstAttribute="top" secondItem="JNU-Vd-hvH" secondAttribute="top" constant="16" id="787-Qs-ia2"/>
+                                    <constraint firstItem="8sx-rC-caT" firstAttribute="top" secondItem="1RR-QL-B0g" secondAttribute="bottom" constant="16" id="FiN-g6-nuP"/>
+                                    <constraint firstItem="1RR-QL-B0g" firstAttribute="leading" secondItem="JNU-Vd-hvH" secondAttribute="leading" constant="16" id="IX0-fa-jo0"/>
+                                    <constraint firstItem="8sx-rC-caT" firstAttribute="leading" secondItem="JNU-Vd-hvH" secondAttribute="leading" constant="16" id="JGf-R6-cAY"/>
+                                    <constraint firstAttribute="trailing" secondItem="1RR-QL-B0g" secondAttribute="trailing" constant="16" id="LpG-0B-zId"/>
+                                    <constraint firstAttribute="trailing" secondItem="8sx-rC-caT" secondAttribute="trailing" constant="16" id="iRN-do-W96"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JNU-Vd-hvH" secondAttribute="bottom" id="Gua-Xq-6ow"/>
+                            <constraint firstItem="JNU-Vd-hvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PKc-S0-ade"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNU-Vd-hvH" secondAttribute="trailing" id="tWb-ID-i2C"/>
+                            <constraint firstItem="JNU-Vd-hvH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wmg-GK-vxK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelAssignSubscriber" destination="1RR-QL-B0g" id="Mry-ZC-Eo1"/>
+                        <outlet property="tapButton" destination="8sx-rC-caT" id="gxw-Rj-IdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="102"/>
+        </scene>
+    </scenes>
+</document>
